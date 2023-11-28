@@ -61,8 +61,11 @@ class HomeActivity extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar( title:const Center(child: Text("Hello",style: TextStyle(color: Colors.red))) ,
-      backgroundColor: Colors.green,),
+      appBar: AppBar(title: const Text("My app"),backgroundColor: Colors.blue,centerTitle: true,toolbarHeight: 60,elevation: 100,) ,
+      backgroundColor: Colors.white,
+      bottomNavigationBar:const AboutListTile(),
+
+
     );
   }
 
